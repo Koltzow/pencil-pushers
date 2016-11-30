@@ -1,0 +1,1 @@
+define(["lib/objects/health","lib/objects/portal"],function(t,e){var l={health:t,portal:e};return l});

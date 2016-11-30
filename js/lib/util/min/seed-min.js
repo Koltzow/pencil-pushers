@@ -1,0 +1,1 @@
+define(function(){var n={};return n.create=function(){var n=Math.random().toString(36).substring(7);return n},n});
