@@ -40,7 +40,7 @@ Dust.update = function () {
 	    this.particles[i].y -= Math.random()/2;
 	    this.particles[i].x += Math.random()*2-1;
 	    
-	    var l = (0.2/this.l * this.particles[i].l);
+	    var l = (0.5/this.l * this.particles[i].l);
 	    	    	    
 	    this.particles[i].c = 'rgba(255,255,255, '+l+')';
 	    

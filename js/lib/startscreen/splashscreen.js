@@ -8,10 +8,12 @@ define(function () {
 		logoRed: new Image(),
 		logoBlue: new Image(),
 		pressStart: new Image(),
-		stars: []
+		stars: [],
+		currentAnimationFrame: 0,
+		animation: {x: 0, y: 0, f:6, s:4}
 	};
 	
-	Splashscreen.backgroundImage.src = 'images/splashscreen.png';
+	Splashscreen.backgroundImage.src = 'images/splashscreen2.png';
 	Splashscreen.logo.src = 'images/logo.png';
 	Splashscreen.logoRed.src = 'images/logo_red.png';
 	Splashscreen.logoBlue.src = 'images/logo_blue.png';
@@ -21,20 +23,26 @@ define(function () {
 	
 	Splashscreen.update = function () {
 	
+		this.currentAnimationFrame += 1/this.animation.s;
+		
+		if(this.currentAnimationFrame >= this.animation.f){
+			this.currentAnimationFrame = 0;
+		}
+	
 		if(!this.initiated){
 			this.initiated = true;
 			
-			//EXP.sound.play('boss');
+			//EXP.sound.play('main', {loop: -1});
 			
-			for (var i = 0; i < 100; i++) {
-				Splashscreen.stars.push({
-					x: Math.random()*EXP.engine.width,
-					y: Math.random()*EXP.engine.height,
-					s: Math.random()*3+1,
-					w: Math.ceil(Math.random()*2),
-					l: Math.random()*100
-				});
-			}
+//			for (var i = 0; i < 100; i++) {
+//				Splashscreen.stars.push({
+//					x: Math.random()*EXP.engine.width,
+//					y: Math.random()*EXP.engine.height,
+//					s: Math.random()*3+1,
+//					w: Math.ceil(Math.random()*2),
+//					l: Math.random()*100
+//				});
+//			}
 		}
 		
 		if(
@@ -68,7 +76,19 @@ define(function () {
 	
 	Splashscreen.render = function () {
 	
-		EXP.engine.ctx.drawImage(this.backgroundImage, 0, 0, EXP.engine.width, EXP.engine.height);
+		//EXP.engine.ctx.drawImage(this.backgroundImage, 0, 0, EXP.engine.width, EXP.engine.height);
+		
+		EXP.engine.ctx.drawImage(
+			this.backgroundImage,
+			(this.animation.x+Math.floor(this.currentAnimationFrame))*EXP.engine.width, 
+			0,
+			EXP.engine.width,
+			EXP.engine.height,
+			0,
+			0,
+			EXP.engine.width,
+			EXP.engine.height
+		);
 		
 		for (var i = 0; i < this.stars.length; i++) {
 			EXP.engine.ctx.fillStyle = '#F5C900';

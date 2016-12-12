@@ -4,7 +4,9 @@ var EXP = {};
 
 require([
 	'lib/data',
-	'lib/boss',
+	'lib/sprite',
+	'lib/weapons',
+	'lib/bosses',
 	'lib/ammo',
 	'lib/sound',
 	'lib/effects',
@@ -13,19 +15,22 @@ require([
 	'lib/physics',
 	'lib/objects',
 	'lib/items',
-	'lib/room',
 	'lib/camera',
 	'lib/engine',
+	'lib/room',
 	'lib/player',
 	'lib/controller',
 	'lib/debug',
-	'lib/startscreen'
-], function(Data, Boss, Ammo, Sound, Effects, Util, Ui, Physics, Objects, Items, Room, Camera, Engine, Player, Controller, Debug, Startscreen) {
+	'lib/startscreen',
+	'lib/menu',
+], function(Data, Sprite, Weapons, Bosses, Ammo, Sound, Effects, Util, Ui, Physics, Objects, Items, Camera, Engine, Room, Player, Controller, Debug, Startscreen, Menu) {
 
 	EXP = {
 		data: Data,
+		sprite: Sprite,
+		weapons: Weapons,
 		ammo: Ammo,
-		boss: Boss,
+		bosses: Bosses,
 		sound: Sound,
 		room: Room,
 		player: Player,
@@ -39,7 +44,8 @@ require([
 		ui: Ui,
 		physics: Physics,
 		debug: Debug,
-		startscreen: Startscreen
+		startscreen: Startscreen,
+		menu: Menu
 	};	
 	
 	EXP.engine.create();

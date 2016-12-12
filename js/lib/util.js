@@ -1,12 +1,14 @@
 define([
 	'lib/util/string',
 	'lib/util/number',
-	'lib/util/seed'
-], function (String, Number, Seed) {
+	'lib/util/seed',
+	'lib/util/uid'
+], function (String, Number, Seed, Uid) {
 
 	var Util = {
 	    
-	    seed: Seed
+	    seed: Seed,
+	    uid: Uid
 	
 	};
 		

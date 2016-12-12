@@ -1,48 +1,52 @@
 define(function () {
 
-	var Staple = {};
+	function Staple(type, pos, angle, strength) {
 	
-	Staple.create = function (type, pos, dir, strength) {
-	
-		var staple = {
-			id: (new Date()).getTime(),
-			type: 'ammo',
-			label: 'staple',
-			x: pos.x || 0, 
-			y: pos.y || 0,
-			dir: dir || {x: -1, y:0},
-			strength: strength || 6,
-			life: 100,
-			firedBy: type || 'none',
-			width: 4,
-			height: 4,
-			collider: {
-				top: 0,
-				left: 0,
-				width: 4,
-				height: 4
-			},
-			damage: 10,
-			tilesheet: new Image()
+		this.id = new EXP.util.uid();
+		this.type = 'ammo';
+		this.label = 'staple';
+		this.x = pos.x || 0; 
+		this.y = pos.y || 0;
+		this.dir = {
+			x: Math.cos(angle), 
+			y: Math.sin(angle)
 		};
+		this.strength = strength || 3;
+		this.life = 100;
+		this.firedBy = type || 'none';
+		this.width = 10;
+		this.height = 10;
+		this.damage = 10;
 		
-		staple.x += dir.x*5;
-		staple.y += dir.y*5
+		this.collider = new EXP.physics.collider({
+			parent: this,
+			width: this.width,
+			height: this.height
+		});
 		
-		staple.tilesheet.src = 'images/tilesheets/ammo/staple.png';
+		this.sprite = new EXP.sprite({
+			parent: this,
+			url: 'images/tilesheets/'+this.type+'/'+this.label+'.png',
+			animations: {
+				default: { x:0, y:0, f:8, s:4 }
+			}
+		});
 		
-		staple.update = function () {
+		this.update = function () {
 					
 			this.x += this.dir.x*this.strength;
 			this.y += this.dir.y*this.strength;
+			
+			this.sprite.update();
+			this.collider.update();
 						
 			this.life--;
 			
 			if(this.life <= 0){
 				
-				this.remove();
-				
+				EXP.engine.remove(this);
 				return;
+				
 			}
 			
 			for (var i = 0; i < EXP.engine.bodies.length; i++) {
@@ -52,62 +56,31 @@ define(function () {
 				}
 				
 				if(EXP.physics.collision.test(this, EXP.engine.bodies[i])){
-					EXP.effects.hit.create(this.x, this.y);
-					this.remove();
+					EXP.engine.remove(this);
+					new EXP.effects.hit(this.x, this.y);
 				}
 			}
 		
 		};
 		
-		staple.onCollisionEnter = function (obj) {
-			this.remove();
-			EXP.effects.exp.add(this.x, this.y, '-');
-			EXP.effects.hit.create(this.x, this.y);
+		this.onCollisionEnter = function (obj) {
+						
 			obj.health -= this.damage;
+			EXP.engine.remove(this);
+			//new EXP.effects.exp(this.x - this.width/2, this.y - this.height/2, '-');
+			new EXP.effects.hit(this.x, this.y);
 			
 		};
 		
-		staple.remove = function () {
-		
-			for (var i = 0; i < EXP.engine.bodies.length; i++) {
-				if(EXP.engine.bodies[i].id === this.id){
-					EXP.engine.bodies.splice(i, 1);
-				}
-			}
-		
+		this.render = function () {
+			this.sprite.render();
+			this.collider.render();
 		};
 		
-		staple.render = function () {
-		
-			EXP.engine.ctx.fillStyle = 'rgb(255,0,0)';
-			EXP.engine.ctx.drawImage(
-				this.tilesheet,
-				Math.round(this.x - EXP.camera.x),
-				Math.round(this.y - EXP.camera.y),
-				this.width,
-				this.height
-			);
-			
-			if(EXP.debug.colliders){
-			
-				EXP.engine.ctx.fillStyle = 'rgba(0,255,0,0.5)';
-				EXP.engine.ctx.fillRect(
-					Math.round(this.x - EXP.camera.x),
-					Math.round(this.y - EXP.camera.y),
-					this.width,
-					this.height
-				);
-			}
-		
-		};
-
-		EXP.sound.play('stapler', {volume: 0.5});
-		EXP.engine.bodies.push(staple);
-		
-		return staple;
+		EXP.engine.add(this);
 	
 	}
 	
-	return Staple;
+	return Staple;	
 	
 });

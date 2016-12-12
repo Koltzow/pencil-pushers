@@ -1,15 +1,9 @@
 define([
 	'lib/objects/health',
-	'lib/objects/portal',
-	'lib/objects/trap'
-], function (Health, Portal, Trap) {
+], function (Health) {
 
 	var Objects = {
-	    
-	    health: Health,
-	    portal: Portal,
-	    trap: Trap
-	
+	    health: Health
 	};
 		
 	return Objects;

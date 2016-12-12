@@ -1,6 +1,8 @@
 define(function () {
 
-	var HealthBar = {};
+	var HealthBar = {
+		ui: []
+	};
 	
 	HealthBar.create = function (id) {
 	
@@ -52,9 +54,27 @@ define(function () {
 		
 		};
 		
+		this.ui.push(healthbar);
+		
 		return healthbar;
 	
 	};
+	
+	HealthBar.update = function () {
+	
+		for (var i = 0; i < this.ui.length; i++) {
+			this.ui[i].update();
+		}
+	
+	}
+	
+	HealthBar.render = function () {
+	
+		for (var i = 0; i < this.ui.length; i++) {
+			this.ui[i].render();
+		}
+	
+	}
 	
 	return HealthBar;
 

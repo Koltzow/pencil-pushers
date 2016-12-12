@@ -19,7 +19,7 @@ define([
 	Ui.update = function () {
 	
 		//this.shieldbar.update();
-		//this.healthbar.update();
+		this.healthbar.update();
 		//this.jetfuelbar.update();
 		//this.inventorybar.update();
 	
@@ -28,7 +28,7 @@ define([
 	Ui.render = function () {
 		
 		//this.shieldbar.render();
-		//this.healthbar.render();
+		this.healthbar.render();
 		//this.jetfuelbar.render();
 		//this.inventorybar.render();
 		

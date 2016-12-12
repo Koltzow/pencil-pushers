@@ -27,8 +27,20 @@ define(function () {
 			bW = b.collider.width;
 			bH = b.collider.height;
 		}
+		
+		if(aX + aW > bX && aX < bX + bW && aY + aH > bY && aY < bY + bH){
+				
+			if(aY <= bY - (bH/2)) return 'top';
+			if(aY >= bY + (bH/2)) return 'bottom';
+			if(aX < bX) return 'left';
+			if(aX > bX) return 'right';
+			  
+			return true;
+			
+		} else {
+			return false;
+		}
 		 
-		return aX + aW > bX && aX < bX + bW && aY + aH > bY && aY < bY + bH;
 	}
 	
 	return Collision;

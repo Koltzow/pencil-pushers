@@ -11,10 +11,12 @@ define(function () {
 		freeSlot: new Image(),
 		indicatorImage: new Image(),
 		counter: 0,
-		delay: 0
+		delay: 0,
+		currentAnimationFrame: 0,
+		animation: {x: 0, y: 0, f: 6, s: 4}
 	};
 	
-	Selectplayer.backgroundImage.src = 'images/splashscreen.png';
+	Selectplayer.backgroundImage.src = 'images/splashscreen2.png';
 	Selectplayer.freeSlot.src = 'images/freeslot.png';
 	Selectplayer.characterThumbnail.src = 'images/tilesheets/player/characters-thumbnail.png';
 	Selectplayer.characterBig.src = 'images/tilesheets/player/characters-big.png';
@@ -22,18 +24,25 @@ define(function () {
 	
 	Selectplayer.update = function () {
 	
+		this.currentAnimationFrame += 1/this.animation.s;
+		
+		if(this.currentAnimationFrame >= this.animation.f){
+			this.currentAnimationFrame = 0;
+		}
+		
+	
 		if(!this.initiated){
 			this.initiated = true;
 			
-			for (var i = 0; i < 100; i++) {
-				this.stars.push({
-					x: Math.random()*EXP.engine.width,
-					y: Math.random()*EXP.engine.height,
-					s: Math.random()*3+1,
-					w: Math.ceil(Math.random()*2),
-					l: Math.random()*100
-				});
-			}
+//			for (var i = 0; i < 100; i++) {
+//				this.stars.push({
+//					x: Math.random()*EXP.engine.width,
+//					y: Math.random()*EXP.engine.height,
+//					s: Math.random()*3+1,
+//					w: Math.ceil(Math.random()*2),
+//					l: Math.random()*100
+//				});
+//			}
 		}
 		
 		for (var i = 0; i < EXP.controller.controllers.length; i++) {
@@ -43,8 +52,17 @@ define(function () {
 			}
 			
 			if(EXP.controller.controllers[i].buttons[0].click && EXP.controller.controllers[i].ready){
-				EXP.startscreen.active = false;
-				EXP.room.generate();
+			
+				var allReady = true;
+			
+				for (var j = 0; j < EXP.controller.controllers.length; j++) {
+					if(EXP.controller.controllers[j].connected && !EXP.controller.controllers[j].ready) allReady = false;
+				}
+				
+				if(allReady){
+					EXP.startscreen.active = false;
+					EXP.room.generate();
+				}
 			}
 			
 			if(EXP.controller.controllers[i].buttons[0].click && !EXP.controller.controllers[i].ready){
@@ -100,7 +118,19 @@ define(function () {
 	
 	Selectplayer.render = function () {
 	
-		EXP.engine.ctx.drawImage(this.backgroundImage, 0, 0, EXP.engine.width, EXP.engine.height);
+		//EXP.engine.ctx.drawImage(this.backgroundImage, 0, 0, EXP.engine.width, EXP.engine.height);
+		
+		EXP.engine.ctx.drawImage(
+			this.backgroundImage,
+			(this.animation.x+Math.floor(this.currentAnimationFrame))*EXP.engine.width, 
+			0,
+			EXP.engine.width,
+			EXP.engine.height,
+			0,
+			0,
+			EXP.engine.width,
+			EXP.engine.height
+		);
 		
 		for (var i = 0; i < this.stars.length; i++) {
 			EXP.engine.ctx.fillStyle = '#F5C900';
@@ -110,7 +140,7 @@ define(function () {
 		for (var i = 0; i < EXP.controller.controllers.length; i++) {
 			
 			
-			EXP.engine.ctx.fillStyle = '#260562';
+			EXP.engine.ctx.fillStyle = (EXP.controller.controllers[i].ready) ? '#FCCCB0' : '#260562';
 			EXP.engine.ctx.fillRect(
 				130*i + 69,
 				64,

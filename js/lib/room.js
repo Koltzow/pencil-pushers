@@ -1,42 +1,90 @@
-/*jshint bitwise: false*/
-
-var EXP = EXP || {};
-
 define(function () {
 
 	var Room = {
 		seed: '',
-		color: '#333',
-		tilesheet: new Image()
+		width: 0,
+		height: 0,
+		tileheight: 16,
+		tilewidth:16,
+		room: [],
+		currentTileset: null,
+		currentImage: new Image(),
+		tilesets: [
+			{
+				columns: 1,
+				image: 'images/tilesheets/rooms/demo.png',
+				imageheight: 16*3,
+				imagewidth: 16,
+				margin: 0,
+				name: 'demo',
+				spacing: 0,
+				tilecount: 3,
+				tileheight: 16,
+				tilewidth: 16
+			}
+		]
 	};
-	
-	Room.tilesheet.src = 'images/tilesheets/planet/vegetation3.png';
-	
+		
 	Room.generate = function () {
-		
+	
 		this.seed = EXP.util.seed.create();
+	
+		this.room = [];
+		this.currentTileset = this.tilesets[Math.floor(Math.random()*this.tilesets.length)];
+		this.currentImage.src = this.currentTileset.image;
 		
-		EXP.boss.test.create();
+		this.width = Math.ceil(EXP.engine.width/16)+2;
+		this.height = Math.ceil(EXP.engine.height/16)+4;
 		
-		EXP.objects.health.create({x:500,y:250});
-		EXP.objects.trap.create({x:128,y:234});
+		for (var y = 0; y < this.height; y++) {
+			for (var x = 0; x < this.width; x++) {
+			
+				if(y === 0 || y === this.height-1 || x === 0 || x === this.width-1){
+					this.room.push([0,2]); //roof
+					continue;
+				}
+				
+				if( y > 0 && y < 4 && x > 0 && x < this.width ){
+					this.room.push([0,1]);
+					continue;
+				}
+				
+				this.room.push([0,0]);
+				continue;
+				
+			}
+		}
+				
+		EXP.bosses.test.create();
+		
+		new EXP.objects.health({x:5*EXP.engine.TILESIZE,y:EXP.engine.TILESIZE*2});
+		new EXP.weapons.stapler(undefined, {x: 2*EXP.engine.TILESIZE, y: 4*EXP.engine.TILESIZE});
 		
 		EXP.camera.follow(EXP.controller.controllers);
 		
 		return true;
 	};
 	
+	Room.update = function () {};
+	
 	Room.render = function () {
 	
-		EXP.engine.ctx.fillStyle = this.color;
+		EXP.engine.ctx.fillStyle = '#222';
 		EXP.engine.ctx.fillRect(0, 0, EXP.engine.width, EXP.engine.height);
-		
-		var tilesToDraw = [];
-		
-		
-		for (var i = 0; i < tilesToDraw.length; i++) {
 				
-			EXP.engine.ctx.drawImage(this.tilesheet, tilesToDraw[i][2]*32, 0, 32, 32, Math.round(tilesToDraw[i][0]*32 + EXP.engine.width/2 - 32/2 - EXP.camera.x), Math.round(tilesToDraw[i][1]*32 + EXP.engine.height/2 - 32/2 - EXP.camera.y), 32, 32);
+		for (var i = 0; i < this.room.length; i++) {
+								
+			EXP.engine.ctx.drawImage(
+				this.currentImage,
+				this.room[i][0] * this.tilewidth, 
+				this.room[i][1] * this.tileheight, 
+				this.tilewidth, 
+				this.tileheight, 
+				(i - Math.floor(i/this.width)*this.width) * this.tilewidth - EXP.camera.x - this.tilewidth, 
+				Math.floor(i/this.width) * this.tileheight - EXP.camera.y - this.tilewidth*3, 
+				this.tilewidth, 
+				this.tileheight
+			);
 			
 		}
 	

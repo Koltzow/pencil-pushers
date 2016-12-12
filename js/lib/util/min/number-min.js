@@ -1,1 +1,0 @@
-Number.prototype.intToHSL=function(){var t=this%360;return"hsl("+t+",45%,56%)"};

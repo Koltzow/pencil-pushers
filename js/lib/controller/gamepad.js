@@ -68,39 +68,42 @@ define(function () {
 				
 					if(!this.controllers[i].connected){
 						console.log('GAMEPAD '+(i+1)+': Connected');
-						this.controllers[i].player = EXP.player.create();
+						this.controllers[i].player = new EXP.player(EXP.data.characters[this.controllers[i].character]);
 					}
 					
 				    this.controllers[i].connected = true;
 				    
+				    if(navigator.getGamepads()[i].buttons !== undefined){
 				    
-				    for (var j = 0; j < navigator.getGamepads()[i].buttons.length; j++) {
+					    for (var j = 0; j < navigator.getGamepads()[i].buttons.length; j++) {
+					    
+					    	if(this.controllers[i].buttons[j] !== undefined){
+					    					    					    					    	
+					    		if(
+					    			!this.controllers[i].buttons[j].pressed &&
+					    			navigator.getGamepads()[i].buttons[j].pressed 
+					    		){
+					    			this.controllers[i].buttons[j].click = true;
+					    			if(EXP.debug.gamepad) console.log('C: '+(i+1)+' click: '+j);
+					    		} else {
+					    			this.controllers[i].buttons[j].click = false;
+					    		}
+					    		
+					    		this.controllers[i].buttons[j].pressed = navigator.getGamepads()[i].buttons[j].pressed;
+					    		this.controllers[i].buttons[j].value = navigator.getGamepads()[i].buttons[j].value;
+					    		
+					    		
+					    	} else {
+					    					    	
+					    		this.controllers[i].buttons[j] = {};
+					    		this.controllers[i].buttons[j].pressed = navigator.getGamepads()[i].buttons[j].pressed;
+					    		this.controllers[i].buttons[j].value = navigator.getGamepads()[i].buttons[j].value;
+					    		this.controllers[i].buttons[j].click = false;
+					    		
+					    	}
+					    	
+					    }
 				    
-				    	if(this.controllers[i].buttons[j] !== undefined){
-				    					    					    					    	
-				    		if(
-				    			!this.controllers[i].buttons[j].pressed &&
-				    			navigator.getGamepads()[i].buttons[j].pressed 
-				    		){
-				    			this.controllers[i].buttons[j].click = true;
-				    			if(EXP.debug.gamepad) console.log('C: '+(i+1)+' click: '+j);
-				    		} else {
-				    			this.controllers[i].buttons[j].click = false;
-				    		}
-				    		
-				    		this.controllers[i].buttons[j].pressed = navigator.getGamepads()[i].buttons[j].pressed;
-				    		this.controllers[i].buttons[j].value = navigator.getGamepads()[i].buttons[j].value;
-				    		
-				    		
-				    	} else {
-				    					    	
-				    		this.controllers[i].buttons[j] = {};
-				    		this.controllers[i].buttons[j].pressed = navigator.getGamepads()[i].buttons[j].pressed;
-				    		this.controllers[i].buttons[j].value = navigator.getGamepads()[i].buttons[j].value;
-				    		this.controllers[i].buttons[j].click = false;
-				    		
-				    	}
-				    	
 				    }
 				    
 				    this.controllers[i].stick['left'] = false;
@@ -147,14 +150,12 @@ define(function () {
 				    this.controllers[i].dir.x = 0;
 				    
 				    if(this.controllers[i].sticks.length > 0) {
-				    	this.controllers[i].dir.x = Math.round(this.controllers[i].sticks[0]*3);
+						this.controllers[i].dir.x = Math.round(this.controllers[i].sticks[0]*3);
 				    	this.controllers[i].dir.y = Math.round(this.controllers[i].sticks[1]*3);
 				    }
 				    
-				    if(this.controllers[i].buttons[9].pressed) {
-				    	if(!EXP.engine.stopped){
-				    		EXP.engine.stop();
-				    	} 
+				    if(this.controllers[i].buttons[9].click) {
+				    	EXP.engine.pause();
 				    }
 				    
 				} else {

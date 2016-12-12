@@ -3,16 +3,16 @@ define(function () {
 	var Characters = [
 
 		{
-			name: 'Guy'
+			label: 'Guy'
 		},
 		{
-			name: 'Girl'
+			label: 'Girl'
 		},
 		{
-			name: 'Janitor'
+			label: 'Janitor'
 		},
 		{
-			name: 'Pedro'
+			label: 'Pedro'
 		}
 		
 		

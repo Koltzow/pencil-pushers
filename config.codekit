@@ -2,15 +2,6 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19137",
 "files": {
-	"\/CHANGELOG.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/CHANGELOG.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/CHANGELOG.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
@@ -18,8 +9,8 @@
 		"enableSmartQuotes": 1,
 		"escapeLineBreaks": 0,
 		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/CHANGELOG.md",
 		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/CHANGELOG.html",
@@ -138,6 +129,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/splashscreen2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18945,
+		"inputAbbreviatedPath": "\/images\/splashscreen2.png",
+		"outputAbbreviatedPath": "\/images\/splashscreen2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tilesheets\/ammo\/bigbullet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/ammo\/bigbullet.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/ammo\/bigbullet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tilesheets\/ammo\/bouncelazer.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 143,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/ammo\/bouncelazer.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/ammo\/bouncelazer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tilesheets\/ammo\/bullet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 109,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/ammo\/bullet.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/ammo\/bullet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tilesheets\/ammo\/energyball.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 192,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/ammo\/energyball.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/ammo\/energyball.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/tilesheets\/ammo\/staple.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -171,6 +217,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/tilesheets\/effects\/explosion.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 445,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/effects\/explosion.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/effects\/explosion.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/tilesheets\/effects\/hit.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -178,6 +235,28 @@
 		"initialSize": 258,
 		"inputAbbreviatedPath": "\/images\/tilesheets\/effects\/hit.png",
 		"outputAbbreviatedPath": "\/images\/tilesheets\/effects\/hit.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tilesheets\/effects\/splashscreen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 593,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/effects\/splashscreen.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/effects\/splashscreen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tilesheets\/effects\/tinyexplosion.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 593,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/effects\/tinyexplosion.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/effects\/tinyexplosion.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -347,6 +426,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/tilesheets\/player\/player.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7833,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/player\/player.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/player\/player.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/tilesheets\/player\/shadow.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -354,6 +444,39 @@
 		"initialSize": 162,
 		"inputAbbreviatedPath": "\/images\/tilesheets\/player\/shadow.png",
 		"outputAbbreviatedPath": "\/images\/tilesheets\/player\/shadow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tilesheets\/rooms\/demo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 245,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/rooms\/demo.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/rooms\/demo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tilesheets\/rooms\/office1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 537,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/rooms\/office1.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/rooms\/office1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tilesheets\/rooms\/plain.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1672,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/rooms\/plain.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/rooms\/plain.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -391,6 +514,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/tilesheets\/weapons\/pistol.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 235,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/weapons\/pistol.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/weapons\/pistol.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/tilesheets\/weapons\/stapler.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 151,
+		"inputAbbreviatedPath": "\/images\/tilesheets\/weapons\/stapler.png",
+		"outputAbbreviatedPath": "\/images\/tilesheets\/weapons\/stapler.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -402,7 +547,7 @@
 		},
 	"\/js\/explorer.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/explorer.js",
 		"outputAbbreviatedPath": "\/js\/min\/explorer-min.js",
@@ -413,7 +558,7 @@
 		},
 	"\/js\/lib\/ammo.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/ammo.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/ammo-min.js",
@@ -422,9 +567,53 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/lib\/ammo\/bigbullet.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/ammo\/bigbullet.js",
+		"outputAbbreviatedPath": "\/js\/lib\/ammo\/min\/bigbullet-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/lib\/ammo\/bouncelazer.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/ammo\/bouncelazer.js",
+		"outputAbbreviatedPath": "\/js\/lib\/ammo\/min\/bouncelazer-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/lib\/ammo\/bullet.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/ammo\/bullet.js",
+		"outputAbbreviatedPath": "\/js\/lib\/ammo\/min\/bullet-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/lib\/ammo\/energyball.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/ammo\/energyball.js",
+		"outputAbbreviatedPath": "\/js\/lib\/ammo\/min\/energyball-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/lib\/ammo\/staple.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/ammo\/staple.js",
 		"outputAbbreviatedPath": "\/js\/lib\/ammo\/min\/staple-min.js",
@@ -433,34 +622,23 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/lib\/boss.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/boss.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/boss-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/boss\/min\/test-min.js": {
+	"\/js\/lib\/bosses.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/boss\/min\/test-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/boss\/min\/min\/test-min-min.js",
+		"inputAbbreviatedPath": "\/js\/lib\/bosses.js",
+		"outputAbbreviatedPath": "\/js\/lib\/min\/bosses-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/lib\/boss\/test.js": {
+	"\/js\/lib\/bosses\/test.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/boss\/test.js",
-		"outputAbbreviatedPath": "\/js\/lib\/boss\/min\/test-min.js",
+		"inputAbbreviatedPath": "\/js\/lib\/bosses\/test.js",
+		"outputAbbreviatedPath": "\/js\/lib\/bosses\/min\/test-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -468,7 +646,7 @@
 		},
 	"\/js\/lib\/camera.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/camera.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/camera-min.js",
@@ -479,7 +657,7 @@
 		},
 	"\/js\/lib\/controller.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/controller.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/controller-min.js",
@@ -490,7 +668,7 @@
 		},
 	"\/js\/lib\/controller\/gamepad.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/controller\/gamepad.js",
 		"outputAbbreviatedPath": "\/js\/lib\/controller\/min\/gamepad-min.js",
@@ -501,7 +679,7 @@
 		},
 	"\/js\/lib\/controller\/keyboard.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/controller\/keyboard.js",
 		"outputAbbreviatedPath": "\/js\/lib\/controller\/min\/keyboard-min.js",
@@ -510,42 +688,9 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/lib\/controller\/min\/gamepad-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/controller\/min\/gamepad-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/controller\/min\/min\/gamepad-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/controller\/min\/keyboard-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/controller\/min\/keyboard-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/controller\/min\/min\/keyboard-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/controller\/min\/touch-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/controller\/min\/touch-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/controller\/min\/min\/touch-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/lib\/controller\/touch.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/controller\/touch.js",
 		"outputAbbreviatedPath": "\/js\/lib\/controller\/min\/touch-min.js",
@@ -556,7 +701,7 @@
 		},
 	"\/js\/lib\/data.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/data.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/data-min.js",
@@ -567,7 +712,7 @@
 		},
 	"\/js\/lib\/data\/characters.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/data\/characters.js",
 		"outputAbbreviatedPath": "\/js\/lib\/data\/min\/characters-min.js",
@@ -578,7 +723,7 @@
 		},
 	"\/js\/lib\/data\/items.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/data\/items.js",
 		"outputAbbreviatedPath": "\/js\/lib\/data\/min\/items-min.js",
@@ -598,20 +743,9 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/js\/lib\/data\/min\/items-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/data\/min\/items-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/data\/min\/min\/items-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/lib\/debug.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/debug.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/debug-min.js",
@@ -622,7 +756,7 @@
 		},
 	"\/js\/lib\/effects.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/effects.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/effects-min.js",
@@ -633,7 +767,7 @@
 		},
 	"\/js\/lib\/effects\/dust.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/effects\/dust.js",
 		"outputAbbreviatedPath": "\/js\/lib\/effects\/min\/dust-min.js",
@@ -644,7 +778,7 @@
 		},
 	"\/js\/lib\/effects\/exp.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/effects\/exp.js",
 		"outputAbbreviatedPath": "\/js\/lib\/effects\/min\/exp-min.js",
@@ -653,9 +787,20 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/lib\/effects\/explosion.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/effects\/explosion.js",
+		"outputAbbreviatedPath": "\/js\/lib\/effects\/min\/explosion-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/lib\/effects\/hit.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/effects\/hit.js",
 		"outputAbbreviatedPath": "\/js\/lib\/effects\/min\/hit-min.js",
@@ -664,31 +809,9 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/lib\/effects\/min\/dust-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/effects\/min\/dust-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/effects\/min\/min\/dust-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/effects\/min\/smoke-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/effects\/min\/smoke-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/effects\/min\/min\/smoke-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/lib\/effects\/smoke.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/effects\/smoke.js",
 		"outputAbbreviatedPath": "\/js\/lib\/effects\/min\/smoke-min.js",
@@ -697,9 +820,20 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/lib\/effects\/tinyexplosion.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/effects\/tinyexplosion.js",
+		"outputAbbreviatedPath": "\/js\/lib\/effects\/min\/tinyexplosion-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/lib\/engine.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/engine.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/engine-min.js",
@@ -710,7 +844,7 @@
 		},
 	"\/js\/lib\/items.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/items.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/items-min.js",
@@ -721,7 +855,7 @@
 		},
 	"\/js\/lib\/items\/dummy.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/items\/dummy.js",
 		"outputAbbreviatedPath": "\/js\/lib\/items\/min\/dummy-min.js",
@@ -732,7 +866,7 @@
 		},
 	"\/js\/lib\/items\/gold.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/items\/gold.js",
 		"outputAbbreviatedPath": "\/js\/lib\/items\/min\/gold-min.js",
@@ -741,221 +875,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/lib\/items\/min\/dummy-min.js": {
+	"\/js\/lib\/menu.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/items\/min\/dummy-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/items\/min\/min\/dummy-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/items\/min\/gold-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/items\/min\/gold-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/items\/min\/min\/gold-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/camera-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/camera-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/camera-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/character-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/character-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/character-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/data-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/data-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/data-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/debug-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/debug-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/debug-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/effects-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/effects-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/effects-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/engine-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/engine-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/engine-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/horizon-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/horizon-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/horizon-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/items-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/items-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/items-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/keyboard-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/keyboard-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/keyboard-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/objects-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/objects-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/objects-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/planet-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/planet-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/planet-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/player-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/player-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/player-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/room-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/room-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/room-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/sound-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/sound-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/sound-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/space-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/space-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/space-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/touch-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/touch-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/touch-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/ui-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/ui-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/ui-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/min\/world-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/min\/world-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/min\/min\/world-min-min.js",
+		"inputAbbreviatedPath": "\/js\/lib\/menu.js",
+		"outputAbbreviatedPath": "\/js\/lib\/min\/menu-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -963,7 +888,7 @@
 		},
 	"\/js\/lib\/objects.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/objects.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/objects-min.js",
@@ -974,7 +899,7 @@
 		},
 	"\/js\/lib\/objects\/health.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/objects\/health.js",
 		"outputAbbreviatedPath": "\/js\/lib\/objects\/min\/health-min.js",
@@ -983,53 +908,9 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/lib\/objects\/min\/health-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/objects\/min\/health-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/objects\/min\/min\/health-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/objects\/min\/portal-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/objects\/min\/portal-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/objects\/min\/min\/portal-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/objects\/portal.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/objects\/portal.js",
-		"outputAbbreviatedPath": "\/js\/lib\/objects\/min\/portal-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/objects\/trap.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/objects\/trap.js",
-		"outputAbbreviatedPath": "\/js\/lib\/objects\/min\/trap-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/lib\/physics.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/physics.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/physics-min.js",
@@ -1038,9 +919,20 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/lib\/physics\/collider.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/physics\/collider.js",
+		"outputAbbreviatedPath": "\/js\/lib\/physics\/min\/collider-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/lib\/physics\/collision.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/physics\/collision.js",
 		"outputAbbreviatedPath": "\/js\/lib\/physics\/min\/collision-min.js",
@@ -1049,20 +941,9 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/lib\/physics\/min\/collision-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/physics\/min\/collision-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/physics\/min\/min\/collision-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/lib\/player.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/player.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/player-min.js",
@@ -1073,7 +954,7 @@
 		},
 	"\/js\/lib\/room.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/room.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/room-min.js",
@@ -1084,7 +965,7 @@
 		},
 	"\/js\/lib\/sound.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/sound.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/sound-min.js",
@@ -1093,9 +974,20 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/lib\/sprite.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/sprite.js",
+		"outputAbbreviatedPath": "\/js\/lib\/min\/sprite-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/lib\/startscreen.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/startscreen.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/startscreen-min.js",
@@ -1104,20 +996,9 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/lib\/startscreen\/min\/selectplayer-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/startscreen\/min\/selectplayer-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/startscreen\/min\/min\/selectplayer-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/lib\/startscreen\/selectboss.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/startscreen\/selectboss.js",
 		"outputAbbreviatedPath": "\/js\/lib\/startscreen\/min\/selectboss-min.js",
@@ -1128,7 +1009,7 @@
 		},
 	"\/js\/lib\/startscreen\/selectplayer.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/startscreen\/selectplayer.js",
 		"outputAbbreviatedPath": "\/js\/lib\/startscreen\/min\/selectplayer-min.js",
@@ -1139,7 +1020,7 @@
 		},
 	"\/js\/lib\/startscreen\/splashscreen.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/startscreen\/splashscreen.js",
 		"outputAbbreviatedPath": "\/js\/lib\/startscreen\/min\/splashscreen-min.js",
@@ -1150,7 +1031,7 @@
 		},
 	"\/js\/lib\/ui.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/ui.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/ui-min.js",
@@ -1161,7 +1042,7 @@
 		},
 	"\/js\/lib\/ui\/bossbar.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/ui\/bossbar.js",
 		"outputAbbreviatedPath": "\/js\/lib\/ui\/min\/bossbar-min.js",
@@ -1172,7 +1053,7 @@
 		},
 	"\/js\/lib\/ui\/healthbar.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/ui\/healthbar.js",
 		"outputAbbreviatedPath": "\/js\/lib\/ui\/min\/healthbar-min.js",
@@ -1183,7 +1064,7 @@
 		},
 	"\/js\/lib\/ui\/inventorybar.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/ui\/inventorybar.js",
 		"outputAbbreviatedPath": "\/js\/lib\/ui\/min\/inventorybar-min.js",
@@ -1194,7 +1075,7 @@
 		},
 	"\/js\/lib\/ui\/jetfuelbar.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/ui\/jetfuelbar.js",
 		"outputAbbreviatedPath": "\/js\/lib\/ui\/min\/jetfuelbar-min.js",
@@ -1203,64 +1084,9 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/lib\/ui\/min\/healthbar-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/ui\/min\/healthbar-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/ui\/min\/min\/healthbar-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/ui\/min\/inventorybar-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/ui\/min\/inventorybar-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/ui\/min\/min\/inventorybar-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/ui\/min\/jetfuelbar-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/ui\/min\/jetfuelbar-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/ui\/min\/min\/jetfuelbar-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/ui\/min\/shield-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/ui\/min\/shield-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/ui\/min\/min\/shield-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/ui\/min\/shieldbar-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/ui\/min\/shieldbar-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/ui\/min\/min\/shieldbar-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/lib\/ui\/shieldbar.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/ui\/shieldbar.js",
 		"outputAbbreviatedPath": "\/js\/lib\/ui\/min\/shieldbar-min.js",
@@ -1271,7 +1097,7 @@
 		},
 	"\/js\/lib\/util.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/util.js",
 		"outputAbbreviatedPath": "\/js\/lib\/min\/util-min.js",
@@ -1280,86 +1106,9 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/lib\/util\/min\/gamepad-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/util\/min\/gamepad-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/min\/gamepad-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/util\/min\/keyboard-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/util\/min\/keyboard-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/min\/keyboard-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/util\/min\/number-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/util\/min\/number-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/min\/number-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/util\/min\/rotateDevice-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/util\/min\/rotateDevice-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/min\/rotateDevice-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/util\/min\/seed-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/util\/min\/seed-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/min\/seed-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/util\/min\/string-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/util\/min\/string-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/min\/string-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/lib\/util\/min\/touch-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/lib\/util\/min\/touch-min.js",
-		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/min\/touch-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/lib\/util\/number.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/util\/number.js",
 		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/number-min.js",
@@ -1370,7 +1119,7 @@
 		},
 	"\/js\/lib\/util\/rotatedevice.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/util\/rotatedevice.js",
 		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/rotatedevice-min.js",
@@ -1381,7 +1130,7 @@
 		},
 	"\/js\/lib\/util\/seed.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/util\/seed.js",
 		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/seed-min.js",
@@ -1392,7 +1141,7 @@
 		},
 	"\/js\/lib\/util\/string.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/lib\/util\/string.js",
 		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/string-min.js",
@@ -1401,12 +1150,45 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/min\/explorer-min.js": {
+	"\/js\/lib\/util\/uid.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/min\/explorer-min.js",
-		"outputAbbreviatedPath": "\/js\/min\/min\/explorer-min-min.js",
+		"inputAbbreviatedPath": "\/js\/lib\/util\/uid.js",
+		"outputAbbreviatedPath": "\/js\/lib\/util\/min\/uid-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/lib\/weapons.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/weapons.js",
+		"outputAbbreviatedPath": "\/js\/lib\/min\/weapons-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/lib\/weapons\/pistol.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/weapons\/pistol.js",
+		"outputAbbreviatedPath": "\/js\/lib\/weapons\/min\/pistol-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/lib\/weapons\/stapler.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/weapons\/stapler.js",
+		"outputAbbreviatedPath": "\/js\/lib\/weapons\/min\/stapler-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1414,7 +1196,7 @@
 		},
 	"\/js\/require.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/require.js",
 		"outputAbbreviatedPath": "\/js\/min\/require-min.js",
@@ -1635,7 +1417,7 @@
 	"jadeAutoOutputPathStyle": 0,
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
-	"javascriptAutoOutputPathEnabled": 1,
+	"javascriptAutoOutputPathEnabled": 0,
 	"javascriptAutoOutputPathFilenamePattern": "*-min.js",
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
@@ -2133,11 +1915,11 @@
 			"flagValue": -1
 			},
 		"dead_code": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"drop_console": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"drop_debugger": {

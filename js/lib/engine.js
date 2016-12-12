@@ -9,7 +9,7 @@ define(function () {
 		params = params || {};
 		this.seed = seed || '1';
 		
-		document.body.style.backgroundColor = '#111';
+		document.body.style.backgroundColor = '#000';
 		
 		this.container = document.createElement('div');
 		this.container.id = 'canvas-container';
@@ -34,10 +34,11 @@ define(function () {
 		this.players = 0;
 		this.maxPlayers = 2;
 		this.stopped = true;
+		this.paused = false;
 		this.fullscreen = params.fullscreen || true;
 		this.width = 640;
 		this.height = 360;
-		this.backgroundColor = params.backgroundColor || '#03a9f4';
+		this.backgroundColor = params.backgroundColor || '#000';
 		this.fps = params.fps || 60;
 		this.camera = params.camera || {x:0, y:0};
 			
@@ -69,7 +70,6 @@ define(function () {
 		this.ctx.imageSmoothingEnabled = false;
 		this.ctx.mozImageSmoothingEnabled = false;
 		this.ctx.oImageSmoothingEnabled = false;
-		this.ctx.webkitImageSmoothingEnabled = false;
 		this.ctx.msImageSmoothingEnabled = false; 
 		
 		// shim layer with setTimeout fallback
@@ -89,6 +89,7 @@ define(function () {
 		
 		//eventlisteners
 		window.addEventListener('resize', this.resize.bind(this));
+		
 		EXP.controller.keyboard.addKeyPressListener('Escape', function () {
 			if(_this.stopped){
 				_this.run();
@@ -96,7 +97,7 @@ define(function () {
 				_this.stop();
 			}
 		});
-			
+					
 	};
 	
 	Engine.clear = function () {
@@ -113,8 +114,14 @@ define(function () {
 			EXP.startscreen.update();
 			return;
 		}
-	
+		
+		if(EXP.engine.paused && EXP.menu !== undefined){
+			EXP.menu.update();
+			return;
+		}
+		
 		this.bodies.sort(function (a, b) {
+			if(a.collider === undefined)console.log(a);
 			return a.y + a.collider.top + a.collider.height > b.y + b.collider.top + b.collider.height;
 		});
 		
@@ -122,8 +129,8 @@ define(function () {
 			this.bodies[i].update();
 		}
 		
-		EXP.ui.update();
 		EXP.effects.update();
+		EXP.ui.update();
 		
 		if(EXP.camera.target !== undefined) EXP.camera.update();
 						
@@ -135,6 +142,11 @@ define(function () {
 		
 		if(EXP.startscreen !== undefined && EXP.startscreen.active){
 			EXP.startscreen.render();
+			return;
+		}
+		
+		if(EXP.engine.paused && EXP.menu !== undefined){
+			EXP.menu.render();
 			return;
 		}
 		
@@ -152,6 +164,16 @@ define(function () {
 	Engine.add = function (body) {
 	
 		this.bodies.push(body);
+	
+	};
+	
+	Engine.remove = function (body) {
+		
+		for (var i = 0; i < this.bodies.length; i++) {
+			if(this.bodies[i].id === body.id){
+				this.bodies.splice(i, 1);
+			}
+		}
 	
 	};
 	
@@ -212,6 +234,12 @@ define(function () {
 		
 		}
 	
+	};
+	
+	Engine.pause = function () {
+	
+		console.log('pause');
+		this.paused = !this.paused;
 	};
 	
 	Engine.stop = function () {

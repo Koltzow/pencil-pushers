@@ -34,15 +34,18 @@ define(function () {
 			
 		} else if (this.target !== null){
 					
-			if(this.target instanceof Array && EXP.engine.players === 1){
+			if (this.target instanceof Array && EXP.engine.players < 1) {
 			
-				this._x -= (this._x - 0) * 0.1;
-				this._y -= (this._y - 0) * 0.1;
+				this._x -= (this._x - EXP.engine.width/2) * 0.1;
+				this._y -= (this._y - EXP.engine.height/2) * 0.1;
 				
 				this.x = Math.round(this._x);
 				this.y = Math.round(this._y);
-							
-			} else if (this.target instanceof Array && EXP.engine.players > 1) {
+				
+				this.x -= EXP.engine.width/2;
+				this.y -= EXP.engine.height/2;	
+			
+			} else if (this.target instanceof Array) {
 				
 				var x = 0;
 				var y = 0;
@@ -124,14 +127,11 @@ define(function () {
 		
 			console.log('shake');
 		
-			Camera._x = Math.round(Math.random()*intensity-intensity/2);
-			Camera._y = Math.round(Math.random()*intensity-intensity/2);
+			Camera._x += Math.round(Math.random()*intensity-intensity/2);
+			Camera._y += Math.round(Math.random()*intensity-intensity/2);
 			
 			if(counter <= 0){
 				clearInterval(shake);
-				
-				Camera._x = 0;
-				Camera._y = 0;
 			}
 			
 			counter--;

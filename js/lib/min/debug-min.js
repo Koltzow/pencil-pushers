@@ -1,1 +1,0 @@
-define(function(){var i={colliders:!1};return i.showColliders=function(){this.colliders=!0},i.hideColliders=function(){this.colliders=!1},i});

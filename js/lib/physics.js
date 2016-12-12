@@ -1,10 +1,12 @@
 define([
-	'lib/physics/collision'
-], function (Collision) {
+	'lib/physics/collision',
+	'lib/physics/collider'
+], function (Collision, Collider) {
 
 	var Physics = {
 	    
-	    collision: Collision
+	    collision: Collision,
+	    collider: Collider
 	
 	};
 		

@@ -140,11 +140,13 @@ define(function () {
 	};
 	
 	var manifest = [
+		{id:'weapon-pistol-fire', src:'sounds/weapons/pistol-fire.wav'},
+		{id:'weapon-stapler-fire',	src:'sounds/weapons/stapler-fire.mp3'},
+		{id:'main', 	src:'sounds/main.mp3'},
 		{id:'select', 	src:'sounds/select.wav'},
 		{id:'footsteps',src:'sounds/steps.mp3'},
 		{id:'boss',		src:'sounds/boss.mp3'},
 		{id:'hit',		src:'sounds/hit.wav'},
-		{id:'stapler',	src:'sounds/weapon-stapler.mp3'},
 		{id:'portal', 	src:'sounds/portal.ogg'},
 		{id:'health', 	src:'sounds/health.wav'},
 		{id:'death', 	src:'sounds/death.wav'},

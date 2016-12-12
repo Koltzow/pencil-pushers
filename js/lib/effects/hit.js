@@ -1,63 +1,51 @@
 define(function () {
 
-var Hit = {
-	particles: [],
-	tilesheet: new Image(),
-	l: 5
-};
-
-Hit.tilesheet.src = 'images/tilesheets/effects/hit.png';
-
-Hit.create = function (x, y) {
-
-	var l = this.l;
+	function Hit(x, y) {
 		
-	this.particles.push({
-		x  : x - EXP.engine.TILESIZE/2,
-		y  : y - EXP.engine.TILESIZE/2,
-		l  : 0,
-	});
-	
-	EXP.sound.play('hit');
+		this.id = new EXP.util.uid();
+		this.sprite = new Image(); 
+		this.type = 'effect';
+		this.label = 'hit';
+		this.sprite.src = 'images/tilesheets/effects/'+this.label+'.png';
+		this.width = 32;
+		this.height = 32;
+		this.x = x - this.width/2;
+		this.y = y - this.height/2;
+		this.life = 0;
+		this.maxLife = 5;
+		this.animated = true;
 		
-};
-	
-Hit.update = function () {
-
-	for (var i = 0; i < this.particles.length; i++) {
-	
-	    if(this.particles[i].l < 0){
-	    	this.particles.splice(i, 1);
-	    }
-	    
-	    this.particles[i].l++;
-	    
-	}
-	
-}
-
-Hit.render = function () {
-
-	if(this.particles.length < 1) return;
+		this.update = function () {
+		
+			if(this.life >= this.maxLife){
+				EXP.effects.remove(this);
+			}
 			
-	for(var i = 0; i < this.particles.length; i++) {
-		        
-		EXP.engine.ctx.drawImage(
-			this.tilesheet,
-			EXP.engine.TILESIZE * (this.particles[i].l-1),
-			0,
-			EXP.engine.TILESIZE,
-			EXP.engine.TILESIZE,
-			Math.round(this.particles[i].x - EXP.camera.x), 
-			Math.round(this.particles[i].y - EXP.camera.y),
-			EXP.engine.TILESIZE,
-			EXP.engine.TILESIZE
-		);
-	        
-	}
+			this.life += 1/2;
+		
+		};
+		
+		this.render = function () {
+				
+			EXP.engine.ctx.drawImage(
+				this.sprite,
+				this.width * (Math.floor(this.life) * this.animated),
+				0,
+				this.width,
+				this.height,
+				Math.round(this.x - EXP.camera.x), 
+				Math.round(this.y - EXP.camera.y),
+				this.width,
+				this.height
+			);
+		
+		};
 	
-};
-
-return Hit;
+		EXP.effects.add(this);
+		EXP.sound.play('hit', {volume: 0.3});
+			
+	};
+		
+	return Hit;
 
 });
